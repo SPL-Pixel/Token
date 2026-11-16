@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Der Tagesbote</title>
+<meta name="description" content="Die wichtigsten Nachrichten des Tages – aus mehreren Redaktionen gebündelt, gewichtet und wie eine Zeitung gesetzt.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preload" href="fonts/unifrakturmaguntia-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <div class="top-bar">
+      <div class="top-date" id="date"></div>
+      <div class="top-edition" id="edition"></div>
+      <div class="top-status"><span id="updated">Lädt …</span> <button id="reload" type="button" title="Neu laden" aria-label="Neu laden">↻</button></div>
+    </div>
+    <a class="masthead" href="#/">Der Tagesbote</a>
+    <p class="motto">„Alles, was heute zählt.“</p>
+    <nav class="nav" id="nav" aria-label="Rubriken"></nav>
+    <div class="ticker" id="ticker" aria-label="Marktüberblick"></div>
+  </header>
+  <main id="main" aria-live="polite"><p class="loading">Die Ausgabe wird gesetzt …</p></main>
+  <footer class="foot" id="foot"></footer>
+</div>
+<div class="tip" id="tip" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
